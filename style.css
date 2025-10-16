@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: rgb(146, 189, 60); */
+    background-image: url('bgimg.png');
+}
+.wrapper{
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 40px;
+    transition: height 0.4s ease-out;
+}
+.wrapper p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Lobster', cursive;
+
+}
+.wrapper.active{
+    height: 537px;
+}
+.wrapper .upload-box{
+    height : 200px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+    border : 2px dashed #afafaf;
+}
+.wrapper.active .upload-box{
+    border: none;
+}
+.upload-box p{
+    font-size: 1.06rem;
+    margin-top: 20px;
+}
+.wrapper.active .upload-box p{
+    display: none; 
+}
+.wrapper .active .upload-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wrapper .content{
+    opacity: 0;
+    margin-top: 25px;
+    pointer-events: none;
+}
+.wrapper.active .content{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .column{
+    width : calc(100% / 2 - 15px);
+}
+.row .column label{
+    font-size: 1.06rem;
+}
+
+.target-size-input::placeholder {
+    text-align: center;
+}
+
+.target-size-input {
+    text-align: center;
+}
+
+
+.sizes .column input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+
+}
+.sizes .column input:focus{
+    padding: 0 14px;
+    border: 2px solid #09ecd5;
+}
+.content .checkboxes{
+    margin-top: 20px;
+}
+.checkboxes .column input{
+    width : 17px;
+    height : 17px;
+    margin-right: 9px;
+    accent-color: #0ecfe1;
+}
+.content .download-btn{
+    width : 100%;
+    color: #ebeeee;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.06rem;
+    border-radius: 7px;
+    background: rgb(146, 189, 60);
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    background: rgb(146, 189, 60);
+    text-transform: uppercase;
+}
