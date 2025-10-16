@@ -7,4 +7,8 @@ A simple web application that allows users to upload images and generate short, 
 - 📁 Upload image files (JPG, PNG, etc.)
 - 🔗 Generate unique, shortened URLs for each image
 - 🛡️ Basic validation and error handling
-- 🧰 Built with [Your Tech Stack — see below]
+- 🧰 Built with [HTML/CSS/JS].
+
+
+- 🌐 Deployment
+Deployed on: [Azure/GitHub]
