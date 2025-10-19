@@ -10,5 +10,5 @@ A simple web application that allows users to upload images and generate short, 
 - 🧰 Built with [HTML/CSS/JS].
 
 
-- 🌐 Deployment
+- 🌐 Deployment : 
 Deployed on: [vercel]
