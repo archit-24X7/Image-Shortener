@@ -11,4 +11,4 @@ A simple web application that allows users to upload images and generate short, 
 
 
 - 🌐 Deployment : 
-Deployed on: [vercel]
+Deployed on vercel
